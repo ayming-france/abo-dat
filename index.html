@@ -708,6 +708,17 @@
       border-radius: var(--radius-circle);
       border: 2px solid;
     }
+    .fletch-legend-item .dot.category { background: var(--fletch-category-bg); border-color: var(--fletch-category-border); }
+    .fletch-legend-item .dot.persona { background: var(--fletch-persona-bg); border-color: var(--fletch-persona-border); }
+    .fletch-legend-item .dot.context { background: var(--fletch-context-bg); border-color: var(--fletch-context-border); }
+    .fletch-legend-item .dot.usecase { background: var(--fletch-usecase-bg); border-color: var(--fletch-usecase-border); }
+
+    /* Notes de bas de page (couleurs non tokenisées, gris neutres hors charte). */
+    .footnote-diagnostic-elements { max-width: 1200px; margin: 32px auto 0; font-size: 11px; color: #94a3b8; line-height: 1.5; padding-top: 12px; border-top: 1px solid #e2e8f0; }
+    .footnote-diagnostic-definition { max-width: 1000px; margin: 20px auto 0; font-size: 11px; color: #94a3b8; line-height: 1.5; padding-top: 12px; border-top: 1px solid #e2e8f0; }
+    .footnote-perimetre { font-size: 11px; color: #94a3b8; max-width: 1100px; margin: 28px auto 0; text-align: center; line-height: 1.5; }
+    .footnote-marker { color: #64748b; }
+    .diagnostic-tagline { text-align: center; max-width: 820px; margin: 0 auto 28px; font-size: 18px; font-weight: 700; color: #0ab38c; font-style: italic; }
 
     /* Phases slide */
     .elements-grid {
@@ -1193,6 +1204,16 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .diagnostic-intro { text-align: center; max-width: 820px; margin: 0 auto var(--space-8); }
+    .diagnostic-note { text-align: center; max-width: 820px; margin: var(--space-24) auto 0; }
+    .situer-intro { text-align: center; max-width: 820px; margin: 0 auto var(--space-12); }
+    .cadre-intro { text-align: center; max-width: 820px; margin: 0 auto var(--space-24); }
+    .cadre-note { text-align: center; max-width: 820px; margin: var(--space-20) auto 0; }
+    .acheteurs-intro { text-align: center; max-width: 900px; margin: 0 auto var(--space-8); }
+    .justification-intro { text-align: center; max-width: 820px; margin: 0 auto var(--space-8); }
+    .modele-commercial-intro { text-align: center; max-width: 820px; margin: 0 auto var(--space-24); }
+    .suite-intro { text-align: center; max-width: 820px; margin: 0 auto var(--space-8); }
+    .status-legend { text-align: center; margin: 0 auto var(--space-18); }
   </style>
 </head>
 <body>
@@ -1352,7 +1373,7 @@
           Les 4 phases clés d'une déclaration AT/MP
         </h1>
 
-        <p class="content-paragraph" style="text-align: center; max-width: 820px; margin: 0 auto 8px;">
+        <p class="content-paragraph diagnostic-intro">
           Une procédure globale qui s'applique à tout dossier, et qui permet de situer où ABO&nbsp;DAT et Exter&nbsp;DAT interviennent.
         </p>
 
@@ -1386,8 +1407,8 @@
           </div>
         </div>
 
-        <p style="max-width: 1200px; margin: 32px auto 0; font-size: 11px; color: #94a3b8; line-height: 1.5; padding-top: 12px; border-top: 1px solid #e2e8f0;">
-          <span style="color: #64748b;">*</span> La PEC affecte les cotisations, mais aussi les taux de fréquence et de gravité (marchés publics, notation) et la perception employeur.
+        <p class="footnote-diagnostic-elements">
+          <span class="footnote-marker">*</span> La PEC affecte les cotisations, mais aussi les taux de fréquence et de gravité (marchés publics, notation) et la perception employeur.
         </p>
       </div>
 
@@ -1403,7 +1424,7 @@
           ABO&nbsp;DAT : de quoi parle-t-on, exactement ?
         </h1>
 
-        <p style="text-align: center; max-width: 820px; margin: 0 auto 28px; font-size: 18px; font-weight: 700; color: #0ab38c; font-style: italic;">
+        <p class="diagnostic-tagline">
           Un forfait annuel d'expertise AT/MP à la demande.
         </p>
 
@@ -1429,12 +1450,12 @@
           </div>
         </div>
 
-        <p class="content-paragraph highlight" style="text-align: center; max-width: 820px; margin: 24px auto 0;">
+        <p class="content-paragraph highlight diagnostic-note">
           Le bénéfice : une expertise AT/MP disponible quand on en a besoin, sans la développer en interne ni s'engager dans une externalisation complète.
         </p>
 
-        <p style="max-width: 1000px; margin: 20px auto 0; font-size: 11px; color: #94a3b8; line-height: 1.5; padding-top: 12px; border-top: 1px solid #e2e8f0;">
-          <span style="color: #64748b;">*</span> Pour toute expertise juridique requise, Ayming fait appel à un cabinet d'avocats indépendants, choisi d'un commun accord. Les projets de réserves sont rédigés sur la base des préconisations de ce cabinet.
+        <p class="footnote-diagnostic-definition">
+          <span class="footnote-marker">*</span> Pour toute expertise juridique requise, Ayming fait appel à un cabinet d'avocats indépendants, choisi d'un commun accord. Les projets de réserves sont rédigés sur la base des préconisations de ce cabinet.
         </p>
       </div>
 
@@ -1450,7 +1471,7 @@
           Périmètre Exter&nbsp;DAT / ABO&nbsp;DAT
         </h1>
 
-        <p class="content-paragraph" style="text-align: center; max-width: 820px; margin: 0 auto 12px;">
+        <p class="content-paragraph situer-intro">
           Le détail des 8 étapes opérationnelles d'une déclaration AT/MP, et la couverture par chaque offre.
         </p>
 
@@ -1492,7 +1513,7 @@
           </div>
         </div>
 
-        <p style="font-size: 11px; color: #94a3b8; max-width: 1100px; margin: 28px auto 0; text-align: center; line-height: 1.5;">
+        <p class="footnote-perimetre">
           Sur les étapes non couvertes par ABO&nbsp;DAT, le client garde la main. L'aide à la rédaction du CERFA peut être mobilisée à la demande, hors cœur de l'offre.
         </p>
       </div>
@@ -1509,7 +1530,7 @@
           Les réticences à l'externalisation sont les features de l'abonnement
         </h1>
 
-        <p class="content-paragraph" style="text-align: center; max-width: 820px; margin: 0 auto 24px;">
+        <p class="content-paragraph cadre-intro">
           Les préoccupations qui bloquent une vente Exter&nbsp;DAT sont <strong>exactement les promesses d'ABO&nbsp;DAT</strong>. Ce qui est une objection à lever devient un point d'accord immédiat.
         </p>
 
@@ -1539,7 +1560,7 @@
           </div>
         </div>
 
-        <p class="content-paragraph highlight" style="text-align: center; max-width: 820px; margin: 20px auto 0;">
+        <p class="content-paragraph highlight cadre-note">
           Le commercial ABO&nbsp;DAT qui entend ces phrases ne doit plus chercher à rassurer. Il doit valider : <em>&laquo; Parfait, c'est exactement ce que l'abonnement vous permet de faire. &raquo;</em>
         </p>
       </div>
@@ -1556,7 +1577,7 @@
           Les 4 forces de progrès pour ABO&nbsp;DAT
         </h1>
 
-        <p class="content-paragraph" style="text-align: center; max-width: 900px; margin: 0 auto 8px;">
+        <p class="content-paragraph acheteurs-intro">
           L'achat se déclenche quand les forces de changement (vert) dépassent les forces d'inertie (violet).
         </p>
 
@@ -1653,7 +1674,7 @@
           Les deux positioning statements
         </h1>
 
-        <p class="content-paragraph" style="text-align: center; max-width: 820px; margin: 0 auto 8px;">
+        <p class="content-paragraph justification-intro">
           Une phrase unique pour chaque offre, avec quatre ancres colorées qui rendent la différence immédiatement lisible.
         </p>
 
@@ -1674,10 +1695,10 @@
         </div>
 
         <div class="fletch-legend">
-          <div class="fletch-legend-item"><span class="dot" style="background: #e9d5ff; border-color: #7c3aed;"></span>Catégorie</div>
-          <div class="fletch-legend-item"><span class="dot" style="background: #ecfccb; border-color: #84cc16;"></span>Persona</div>
-          <div class="fletch-legend-item"><span class="dot" style="background: #fef9c3; border-color: #eab308;"></span>Contexte</div>
-          <div class="fletch-legend-item"><span class="dot" style="background: #fed7aa; border-color: #ea580c;"></span>Cas d'usage</div>
+          <div class="fletch-legend-item"><span class="dot category"></span>Catégorie</div>
+          <div class="fletch-legend-item"><span class="dot persona"></span>Persona</div>
+          <div class="fletch-legend-item"><span class="dot context"></span>Contexte</div>
+          <div class="fletch-legend-item"><span class="dot usecase"></span>Cas d'usage</div>
         </div>
       </div>
 
@@ -1693,7 +1714,7 @@
           Le dimensionnement du forfait
         </h1>
 
-        <p class="content-paragraph" style="text-align: center; max-width: 820px; margin: 0 auto 24px;">
+        <p class="content-paragraph modele-commercial-intro">
           Chaque événement consomme un nombre de points déterminé. Le client achète un palier annuel calibré sur son besoin estimé au moment de la signature.
         </p>
 
@@ -1764,10 +1785,10 @@
           Questions à clarifier pendant l'appel
         </h1>
 
-        <p class="content-paragraph" style="text-align: center; max-width: 820px; margin: 0 auto 8px;">
+        <p class="content-paragraph suite-intro">
           Chaque décision est marquée par son statut actuel dans la documentation existante.
         </p>
-        <div style="text-align: center; margin: 0 auto 18px;">
+        <div class="status-legend">
           <span class="d-status open">Ouverte</span>
           <span class="d-status partial">Partiellement documenté</span>
           <span class="d-status invariant">Invariant à challenger</span>
